@@ -32,7 +32,6 @@ section#login{
 }
 
 section#login > div#img{
-    display: block;
     background: #5f2c82 url(../imgs/baixados.jpg) no-repeat;
     height: 200px;
     background-size: cover;
