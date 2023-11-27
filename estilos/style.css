@@ -32,7 +32,8 @@ section#login{
 }
 
 section#login > div#img{
-    background: #5f2c82 url(../imgs/baixados.jpg) no-repeat;
+    display: block;
+    background: #5f2c82 url(../imgs/pexels-photo-3523621.webp) no-repeat;
     height: 200px;
     background-size: cover;
 }

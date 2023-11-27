@@ -1,10 +1,8 @@
 @charset "UTF-8";
 
 @media screen and (min-width: 768px) and (max-width: 992px){
-    
-body{   
-    background-image: linear-gradient(top bottom #49a09d);  
-
+body{
+    background-image: linear-gradient(to top,#49a09d, #5f2c82);
 }
 
 section#login{
@@ -12,6 +10,7 @@ section#login{
 }
 
 section#login > div#img{
+    background-position: bottom center;
     float: left;
     width: 30%;
     height: 100%;
@@ -27,19 +26,24 @@ section#login > div#formulario{
 
 @media screen and (min-width: 992px){
 
-    section#login{
-        width: 990px;
-    }
+body{
+    background-image: linear-gradient(to top,#49a09d, #5f2c82);
+}
 
-    section#login > div#imagem{
-        float: left;
-        height: 400px;
-        background-size: contain;
-    }
+section#login{
+    width: 990px;
+}
 
-    section#login > div#formulario{
-        float: right;
-        width: 50%;
-    }
+section#login > div#img{
+    background-position: center bottom;
+    float: left;
+    width: 50%;
+    height: 100vh;
+}
+
+section#login > div#formulario{
+    float: right;
+    width: 50%;
+}
     
 }
