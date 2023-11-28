@@ -31,19 +31,28 @@ body{
 }
 
 section#login{
-    width: 990px;
+    width: 950px;
 }
 
 section#login > div#img{
-    background-position: center bottom;
-    float: left;
-    width: 50%;
+    float: right;
+    width: 48%;
     height: 100vh;
+    background-position: right bottom;
 }
 
 section#login > div#formulario{
-    float: right;
+    float: left;
     width: 50%;
-}
+    padding: 10px 0px 0px 10px;
     
+}
+
+section#login h1{
+    font-size: 2em;
+}
+
+section#login p{
+    font-size: 1em;
+}
 }
