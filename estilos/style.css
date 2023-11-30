@@ -21,13 +21,13 @@ main{
 section#login{
     position: absolute;
     top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
+    left: 50%; 
     background-color: white;
     width: 250px;
     height: 500px;
     border-radius: 20px;
     overflow: hidden;
+    transform: translate(-50%, -50%);
 }
 
 section#login > div#img{
@@ -51,16 +51,41 @@ section#login h1{
 section#login p{
     font-size: 0.8em;
 }
-label{
+div.campo > label{
     display: none;
 }
-.campo{
+form > div.campo{
     background-color: #5f2c82;
+    border: 2px solid  #5f2c82;
+    display: block;
     margin: 5px 0px;
+    width: 100%;
     height: 40px;
+    border-radius: 8px;
 }
 
-form  input[type=submit] {
+div.campo > i{
+    color: white;
+    font-size: 2em;
+    width: 40px;
+    padding: 4px;
+    display: block;
+}
+div.campo > input{
+    height: 99%;
+    width: calc(100% - 44px);
+    margin-left: 44px;
+    border-radius: 8px;
+    border: 0px;
+    background-color: #94cfcd;
+    transform: translateY(-40px);
+}
+
+div.campo > input:focus-within{
+    background-color: white;
+}
+
+form > input[type=submit] {
     display: block;
     width: 100%;
     height: 30px;
@@ -72,7 +97,7 @@ form  input[type=submit] {
     cursor: pointer;
 }
 
-form  input[type=submit]:hover{
+form > input[type=submit]:hover{
     background-color: #3c817f;
 } 
 
@@ -80,10 +105,10 @@ form a{
     display: block;
     width: 100%;
     height: 30px;
-    background-color: #49a09d;
+    background-color: white;
     text-align: center;
-    color: white;
-    border: none;
+    color: darkgrey;
+    border: 1px solid rgba(0, 0, 0, 0.445);
     border-radius: 5px;
     text-decoration: none;
     margin-top: 10px;
@@ -92,4 +117,5 @@ form a{
 
 form a:hover{
     background-color: #3c817f;
+    color: white;
 }
